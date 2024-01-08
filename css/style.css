@@ -1,0 +1,185 @@
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --shadow: 0 1px 2px #0c0707, 0 3px 8px #000000cb;
+    --white: #ffffff;
+    --green:#06ca27;
+    --black: #000000;
+    --radius: 8px;
+    --ash: #bbbbbbe7;
+    --width:70px;
+    --height:70px ;
+    --light-shadow:0 1px 3px #0c0707, 0 1px 2px #000000cb;
+    --lighter-shadow: 0 20px 30px #f1f1f1, 0 10px 20px #ffffffcd;
+
+
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+.dice-box{
+    background-color: var(--white);
+    padding: 20px 10px;
+    border-radius: var(--radius);
+    margin: 10px auto;
+    max-width: 740px;
+}
+
+
+.faces{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.face{
+    background-color: var(--white);
+    margin: 3px;
+    box-shadow: var(--lighter-shadow);
+    border-radius: 9px;
+}
+/* create the black spots */
+.pip{
+    background-color: var(--black);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 2px;
+    box-shadow: var(--light-shadow);
+}
+/* create the faces */
+.first-face{
+    background-color: var(--white);
+    display: flex;
+    width: var(--width);
+    height: var(--height);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    padding: 2px;
+    box-shadow: var(--shadow);
+    transition: all .54s ease-in-out;
+}
+
+.second-face{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    border-radius: var(--radius);
+    width: var(--width);
+    height: var(--height);
+    padding: 2px;
+    box-shadow: var(--shadow);
+    transition: all .54s ease-in-out;
+}
+.second-face .pip:nth-of-type(2){
+    align-self: flex-end;
+}
+
+.fourth-face{
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 2px;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    transition: all .54s ease-in-out;
+}    
+
+.fourth-face .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.third-face{
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 2px;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.53s ease-in-out;
+}
+
+.third-face .pip:nth-of-type(3){
+    align-self: flex-end;
+}
+
+.third-face .pip:nth-of-type(2){
+    align-self: center;
+}
+
+.fiveth-face{
+    display: flex;
+    background-color: var(--white);
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--radius);
+    padding: 2px;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    transition: all 0.53s ease-in-out;
+}
+
+.fiveth-face .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fiveth-face .pip{
+    align-self: center;
+}
+
+.sixth-face{
+    background-color: var(--white);
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--radius);
+    display: flex;
+    padding: 2px;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    transition: all 0.53s ease-in-out;
+}
+
+.sixth-face .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* create hover effect */
+.first-face:hover{
+    transform: scale(1.1);
+}
+.first-face:hover{
+    transform: scale(1.1);
+}
+.second-face:hover{
+    transform: scale(1.1);
+}
+.third-face:hover{
+    transform: scale(1.1);
+}
+.fourth-face:hover{
+    transform: scale(1.1);
+}
+.fiveth-face:hover{
+    transform: scale(1.1);
+}
+.sixth-face:hover{
+    transform: scale(1.1);
+}

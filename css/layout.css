@@ -1,0 +1,28 @@
+.layouts{
+    background:linear-gradient(to bottom right, rgba(201, 19, 6, 0.836), rgb(221, 129, 9));
+    margin: 0 auto;
+    max-width: 740px;
+}
+section{
+    display: flex;
+}
+
+.column{
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    text-align: center;
+    margin: 9px;
+    padding: 2px;
+    background-color: #f1f1f12c;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0px;
+}
+
+section:nth-of-type(5) .column:first-of-type{
+    flex: 2 2 22px;
+}
+
+section:nth-of-type(6) .column:nth-of-type(2){
+    flex: 3 3 auto;
+}
