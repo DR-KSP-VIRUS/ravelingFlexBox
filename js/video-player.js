@@ -7,7 +7,7 @@ const formatTime = (time) => {
 
 
 const getTime = () => {
-    // get the current time
+    // get the current time to
     const date = new Date();
     let hours = date.getUTCHours();
     let minutes = date.getUTCMinutes();
