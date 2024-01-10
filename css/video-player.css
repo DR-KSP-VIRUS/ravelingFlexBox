@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: none; */
+    outline: none;
 }
 
 :root{
@@ -11,7 +11,7 @@
 }
 
 .video-player{
-    /* background: linear-gradient(12deg,var(--bg-gradient)); */
+    background: linear-gradient(12deg,var(--bg-gradient));
     height: 100vh;
     position: relative;
 }
@@ -25,14 +25,14 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    /* color: #fff; */
+    color: #fff;
     margin-bottom: 32px;
 }
 
 .controls{
     min-width: 220px;
     width: 100%;
-    /* background-color: rgba(0, 0, 0, 0.604); */
+    background-color: rgba(0, 0, 0, 0.604);
     border-radius: 5px;
     margin: 0 8px;
     padding: 12px 4px;

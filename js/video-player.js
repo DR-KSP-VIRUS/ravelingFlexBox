@@ -12,7 +12,7 @@ const getTime = () => {
     let hours = date.getUTCHours();
     let minutes = date.getUTCMinutes();
     let seconds = date.getUTCSeconds();
-    timeRemaining.innerText = `${hours} : ${formatTime(minutes)} : ${formatTime(seconds)}`;
+    timeRemaining.innerText = `${formatTime(hours)} : ${formatTime(minutes)} : ${formatTime(seconds)}`;
 }
 
 // call to update the time
