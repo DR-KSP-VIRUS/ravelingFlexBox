@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --red-orange:linear-gradient(to top, rgba(255, 107, 8, 0.966),rgba(255, 214, 100, 0.781));
+    --orange:rgba(255, 107, 8, 0.966);
+}
+
+main{
+    background-image: var(--red-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bio{
+    display: flex;
+    border: 1px solid var(--red-orange);
+    margin: 0 1.3rem;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.685), rgba(255, 255, 255, 0.712));
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.bio img{
+    flex: 0 0 auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 107, 8, 0.966);
+}
+
+.bio p{
+    color: var(--orange);
+    flex: 1 1 0px;
+    margin-left: 10px;
+    align-self: center;
+}

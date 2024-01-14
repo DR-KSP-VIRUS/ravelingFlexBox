@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+main{
+    background-color: #000000;
+    padding: .3rem;
+
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+
+.plan{
+    min-height: 100vh;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.55s ease-in-out;
+    background: #fff;
+    
+}
+
+
+.plan h3, button{
+    flex: 0 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgb(11, 80, 112);
+}
+
+.plan:nth-child(2) h3,.plan:nth-child(2) button{
+    background-color: rgb(13, 175, 250);
+}
+
+.plan:nth-child(2){
+    z-index: 2;
+    box-shadow: 0 4px 10px rgb(40, 87, 109),1px 4px 10px rgb(0, 0, 0);
+}
+
+.price{
+    flex: 0 0 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.features{
+    flex: 1 1 0px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 1px solid silver;
+}
+
+.feature{
+    padding: 1rem 0;
+    display: flex;
+    width: 100%;
+}
+
+.feature:nth-of-type(odd){
+    background-color: #ccd1d1a9;
+}
+.feature i{
+    flex: 0 0 auto;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.feature p{
+    flex: 1 1 0px;
+    margin-left: 10px;
+}
+.green{
+    color: #fffdfd;
+    background-color: rgb(61, 145, 117);
+}
+
+.gray{
+    background-color: #8c928f;
+    color: #f1f1f1;
+}
+.plan:hover{
+    min-width: max-content;
+    z-index: 3;
+    transform: translateZ(16px);
+    box-shadow: 0 4px 10px rgb(40, 87, 109),1px 4px 10px rgb(0, 0, 0);
+}
+
+
+button{
+    margin: .9rem .5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 80ms ease;
+    border-radius: 10px;
+    padding: 0rem;
+}
+.info{
+    color: #8c928f;
+    text-align: center;
+}
+.top-info{
+    line-height: 30px;
+    text-align: center;
+    color: #8c928f;
+}
+button:active{
+    transform: scale(.89);
+}
+
+
+@media screen and (min-width:960px) {
+    main{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+
+    }
+    .pricing{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .plan{
+        width: 320px;
+    }
+
+    .plan:nth-of-type(1), .plan:nth-of-type(3){
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}

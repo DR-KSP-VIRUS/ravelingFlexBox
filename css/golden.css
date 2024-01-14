@@ -19,20 +19,21 @@ body{
 
 section{
     display: flex;
-    /* width: 560px; */
-    height: 500px;
+    min-height: 100vh;
     gap: 5px;
     padding: 1rem;
 }
 
 .phi-column, .phi-row{
-    background-color: #f8f8f859;
+    background-color: #fff;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.212),rgba(255,255,255,.450));
     flex: 1.6348 1.6348 0px;
-    border: 1px solid #faf9f9;
+    border: 1px solid #faf9f967;
 }
 
 .column, .row{
     background-color: #f8f8f833;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.068),rgba(255, 255, 255, 0.226));
     flex: 1 1 0px;
     border: 1px solid #f8f8f8;
     display: flex;
