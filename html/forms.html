@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../css/forms.css">
+</head>
+<body>
+    <main>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Deserunt exercitationem facere iure velit rem accusamus blanditiis 
+                doloribus in nostrum at expedita, quidem qui accusantium 
+                distinctio enim eaque sed laborum error?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Deserunt exercitationem facere iure velit rem accusamus blanditiis 
+                doloribus in nostrum at expedita, quidem qui accusantium 
+                distinctio enim eaque sed laborum error? 
+                <span>
+                    <button class="open" id="open">Buy Now!</button>
+
+                </span>  
+            </p>
+        </section>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                 Nemo, similique officiis? Vitae, velit nesciunt, doloribus consequatur
+                  quibusdam explicabo earum obcaecati accusamus in perferendis aliquid 
+                  non, est fugit dolore iste quia!
+            </p>
+        </section>
+        <div class="modal">
+            <div class="form" id="open-form">
+                <form action="#">
+                    <span id="close">&times;</span>
+                    <h2>Credit Card Form</h2>
+
+                    <div class="fieldset">
+                        <input type="text" name="name" 
+                        id="name" placeholder="Name on Card"/>
+                    </div>
+
+                    <div class="fieldset">
+                        <div class="credit-card-number-container">
+                            <input type="number" name="credit-card-number"
+                             id="credit-card-number" placeholder="Credit Card Number"/>
+                        </div>
+                        <div>
+                            <input type="number" name="cvc" 
+                            id="cvc" placeholder="CVC"/>
+                        </div>
+                    </div>
+
+                    <div class="fieldset">
+                        <div>
+                            <input type="date" name="exp-month" id="exp-month" 
+                            placeholder="Exp. Month"/>
+                        </div>
+                        <div>
+                            <input type="date" name="exp-year" id="exp-year"
+                            placeholder="Exp. Year"/>
+                        </div>
+                    </div>
+                    <button type="submit">Buy for $99.9</button>
+                </form>
+            </div>
+            <div id="show-overlay"></div>
+        </div>
+    </main>
+    <script src="../js/modal.js"></script>
+</body>
+</html>
