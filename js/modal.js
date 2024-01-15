@@ -11,5 +11,4 @@ openBtn.addEventListener('click',()=>{
 closeBtn.addEventListener('click', ()=>{
     openForm.classList.remove('open-form');
     addOverlay.classList.remove('overlay');
-
 });
