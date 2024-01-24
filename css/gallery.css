@@ -43,6 +43,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .active{
@@ -51,7 +52,7 @@ img{
 
 @keyframes move {
     from{
-        transform: translateY(-100px);
+        transform: translateY(200px);
 
     }
     to{
